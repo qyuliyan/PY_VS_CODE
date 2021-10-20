@@ -15,9 +15,11 @@ def checkArrayForParticulatSym (arr , sum):
 
 if __name__ == '__main__':
     z = 12
-    # m = [1,2,3]
-    m = [1,4,6,8,9,23]
+    m = [1,2,3]
+    # m = [0,12,1,4,6,8,9,23,3]
     checkArrayForParticulatSym(m,z)
+   
+
 
     
 
