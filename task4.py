@@ -5,15 +5,15 @@
 (За масива даден в примера:1+2+3+5+6+7+4=28)
 '''
 def array_processing(arr):
-    sum = 0
+    sum_array = 0   # There is sum Function!!!
     for i in arr:
         # print(f'{i} - {type(i)}' )
-        if type(i) == int:
-            sum +=i
+        if type(i) is int:   # Типове се сравняват с IS!!!
+            sum_array +=i
         else:
-            sum += array_processing(i)
-    return sum
+            sum_array += array_processing(i)
+    return sum_array
 
 if __name__ =='__main__':
     arr = [1,2,3,[5,6,[7]],4]
-    print(f'sum = {array_processing(arr)}')
+    print(f'sum_array = {array_processing(arr)}')
